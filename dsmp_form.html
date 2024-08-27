@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dsmp - Formulário de Entrada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #333333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background-color: #EDE7F6;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #7B1FA2;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: #4A148C;
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #7B1FA2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #6A1B9A;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dsmp - Formulário de Entrada</h1>
+        <form action="https://formsubmit.co/kcacaux@gmail.com" method="POST">
+            <label for="source">Onde conheceu nosso SMP?</label>
+            <input type="text" id="source" name="source" required>
+
+            <label for="experience-rp">Você tem experiência com RP (role play)?</label>
+            <input type="text" id="experience-rp" name="experience-rp" required>
+
+            <label for="smp-participation">Já participou de algum SMP antes?</label>
+            <input type="text" id="smp-participation" name="smp-participation" required>
+
+            <label for="lore-idea">Já tem alguma ideia pra lore?</label>
+            <textarea id="lore-idea" name="lore-idea" rows="4" required></textarea>
+
+            <label for="character-name">Qual o nome do seu personagem?</label>
+            <input type="text" id="character-name" name="character-name" required>
+
+            <label for="activity">Você é ativo?</label>
+            <input type="text" id="activity" name="activity" required>
+
+            <label for="age">Qual sua idade?</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="work-study">Você trabalha/estuda?</label>
+            <input type="text" id="work-study" name="work-study" required>
+
+            <label for="role-preference">Pretende ter uma vaga de player ou ovo?</label>
+            <select id="role-preference" name="role-preference" required>
+                <option value="player">Player</option>
+                <option value="ovo">Ovo</option>
+            </select>
+
+            <label for="discord-nick">Qual seu nick no Discord?</label>
+            <input type="text" id="discord-nick" name="discord-nick" required>
+
+            <input type="hidden" name="_next" value="https://example.com/thank-you">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <input type="submit" value="Terminar Formulário">
+        </form>
+    </div>
+</body>
+</html>
